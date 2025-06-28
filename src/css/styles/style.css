@@ -16714,3 +16714,55 @@ img {
 .no-cursor {
   cursor: not-allowed;
 }
+
+.slider-container {
+  margin-bottom: 40px;
+}
+
+.slick-arrow-custom {
+  color: black;
+  width: 48px;
+  height: 48px;
+  border-radius: 99px;
+  border: 1px solid #dddddd;
+  background-color: white;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.04);
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.slick-arrow-custom:hover {
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  /* rgb(131, 100, 226) */
+}
+
+.next-arrow {
+  right: 0%;
+  transform: translate(0, -50%);
+}
+
+.prev-arrow {
+  left: 0%;
+  transform: translate(0, -50%);
+}
+
+.nft-col-custom {
+  padding: 0 12px;
+}
+
+.nft-loading {
+  background-color: #dddddd;
+  height: 279px;
+}
