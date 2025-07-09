@@ -16766,3 +16766,19 @@ img {
   background-color: #dddddd;
   height: 279px;
 }
+
+.author_list_info_loading {
+  background-color: #dddddd;
+  display: flex;
+  height: 48px;
+  width: 95%;
+  border-radius: 4px;
+}
+
+.author_list_pp_loading {
+  background-color: #dddddd;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  border-radius: 99px;
+}
