@@ -4,7 +4,6 @@ import AuthorImage from "../../images/author_thumbnail.jpg";
 import nftImage from "../../images/nftImage.jpg";
 import axios from "axios";
 import Slider from "react-slick";
-import { use } from "react";
 
 const NewItems = () => {
   const [nfts, setNfts] = useState([]);
@@ -33,14 +32,14 @@ const NewItems = () => {
     var timesTemp = [];
     nfts.map((nft, index) => {
       timesTemp[index] = nft.expiryDate
-        ? Math.floor((nft.expiryDate - Date.now()) / 1000)
+        ? Math.floor(((nft.expiryDate - Date.now()) / 1000) - 1)
         : 0;
     });
 
     setTimes(timesTemp);
 
-    let timer = setInterval(() => {
-      setTimes((prev) => [...timesTemp]);
+    setInterval(() => {
+      setTimes(() => [...timesTemp]);
       timesTemp.map((time, index) => {
         if (timesTemp[index] > 0) timesTemp[index] = time - 1;
       });
