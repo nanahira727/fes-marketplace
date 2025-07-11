@@ -121,7 +121,7 @@ const HotCollections = () => {
                 ))
               : new Array(4).fill(0).map((_, index) => (
                   <div className="nft-col-custom" key={index}>
-                    <div className="nft_coll nft-loading">
+                    <div className="nft_coll nft-loading-small">
 
                     </div>
                   </div>
