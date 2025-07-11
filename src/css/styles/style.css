@@ -16762,9 +16762,13 @@ img {
   padding: 0 12px;
 }
 
-.nft-loading {
+.nft-loading-small {
   background-color: #dddddd;
   height: 279px;
+}
+
+.nft-loading {
+  background-color: #dddddd;
 }
 
 .author_list_info_loading {
