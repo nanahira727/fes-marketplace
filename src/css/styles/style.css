@@ -16786,3 +16786,38 @@ img {
   width: 100%;
   border-radius: 99px;
 }
+
+.avatar-loading {
+  background-color: #dddddd;
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+}
+
+.avatar-text-loading {
+  background-color: #dddddd;
+  width: 300px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.avatar-text-loading-2 {
+  background-color: #dddddd;
+  width: 240px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.avatar-follow-loading {
+  background-color: #dddddd;
+  width: 120px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.avatar-loading-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
