@@ -16689,7 +16689,8 @@ img {
 
 .nft-image {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
+  object-fit: contain;
 }
 
 #filter-items {
@@ -16820,4 +16821,35 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.item-loading-image {
+  background-color: #dddddd;
+  width: 100%;
+  height: 400px;
+  border-radius: 6px;
+}
+
+.item-loading-title {
+  background-color: #dddddd;
+  width: 320px;
+  height: 60px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+
+.item-loading-desc {
+  background-color: #dddddd;
+  width: 460px;
+  height: 28px;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.item-loading-desc-s {
+  background-color: #dddddd;
+  width: 200px;
+  height: 28px;
+  border-radius: 6px;
+  margin-top: 4px;
 }
