@@ -27,16 +27,19 @@ const Nft = ({ nft }) => {
       style={{ display: "block", backgroundSize: "cover" }}
     >
       <div className="nft__item">
-        <div className="author_list_pp">
-          <Link
-            to={`/author/${nft.authorId}`}
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-          >
-            <img className="lazy" src={nft.authorImage} alt="" />
-            <i className="fa fa-check"></i>
-          </Link>
-        </div>
+        {nft.authorId && (
+          <div className="author_list_pp">
+            <Link
+              to={`/author/${nft.authorId}`}
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+            >
+              <img className="lazy" src={nft.authorImage} alt="" />
+              <i className="fa fa-check"></i>
+            </Link>
+          </div>
+        )}
+
         {!time || (
           <div className="de_countdown">
             {Math.floor(time / 3600) == 0 || `${Math.floor(time / 3600)}hr `}
